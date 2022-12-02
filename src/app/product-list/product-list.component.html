@@ -17,7 +17,7 @@
   <!-- passiamo al componente figlio il dato product -->
   <app-product-alerts
   [product]="product"
-  (notify)="onNotify()">
+  (notify)="RiceviStato($event)">
   </app-product-alerts>
 </div>
 
