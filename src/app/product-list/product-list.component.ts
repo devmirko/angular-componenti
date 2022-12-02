@@ -11,13 +11,14 @@ import { products } from '../products';
 export class ProductListComponent {
 
   products = [...products];
+  statoRicevuto = "";
 
   share() {
     window.alert('The product has been shared!');
   }
 
   RiceviStato(value : string){
-    console.log(value)
+    this.statoRicevuto = value
   }
 
 
